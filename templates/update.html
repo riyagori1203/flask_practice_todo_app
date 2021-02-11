@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+
+{%block head%}
+
+{% endblock%}
+<title style="align-items: center;">update Master</title>
+{%block body%}
+<div class="form">
+    <h1>Update Master</h1>
+    
+    <form action="/update/{{task.id}}" method="POST">
+        <input type="text" name="content" id="content" value="{{task.content}}">
+        <input type="submit" value="Update">
+</div>
+
+{% endblock%}
